@@ -1,1 +1,1 @@
-# -Al-Khwarizmi-Study
+# Al-Khwarizmi-Study
