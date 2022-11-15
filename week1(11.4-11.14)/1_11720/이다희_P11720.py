@@ -19,3 +19,4 @@ for i in numbers:
     sum=sum+int(i)
 
 print(sum)
+#이민지
