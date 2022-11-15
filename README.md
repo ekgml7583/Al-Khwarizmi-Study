@@ -2,7 +2,7 @@
 1. repository를 fork 후, clone합니다. (초기 1회만) 
 
 2. fork한 repository 최신화 방법
- 2-1. git remote add upstream  (초기 1회만)
+ 2-1. git remote add upstream 민지꺼 (초기 1회만)
  2-2. git remote -v ( 연결 확인 용도 )
  
  2-3. git fetch upstream ( 원본과 동기화 작업 )
