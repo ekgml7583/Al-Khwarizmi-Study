@@ -15,9 +15,9 @@ for k in range(N):  #K가 N개가 될 때까지 반복
         elif (A[i]+A[j])<K:
             i+=1
         else:
-            if A[i]==K: #자기 자신이 좋은 수가 되는 경우 제외
+            if k==i: #자기 자신이 좋은 수가 되는 경우 제외
                 i+=1 
-            elif A[j]==K: #자기 자신이 좋은 수가 되는 경우 제외
+            elif k==j: #자기 자신이 좋은 수가 되는 경우 제외
                 j-=1
             else:
                 count+=1  #count값 증가시키고
