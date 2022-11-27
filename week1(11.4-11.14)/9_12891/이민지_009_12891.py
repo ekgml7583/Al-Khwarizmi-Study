@@ -9,19 +9,24 @@ total=0 #만들 수 있는 비밀번호 종류의 수
 start=0 #슬라이딩 윈도우의 시작점
 last=P #슬라이딩 윈도우의 끝점
 
-while(last!=S+1): #끝점이 마지막에 도달할때까지
+#윈도우에 있는 문자 카운트 세기
+def Count(c):
+    count=[0,0,0,0]
+    if c == 'A':
+        count[0]+=1
+    elif c == 'C':
+        count[1]+=1
+    elif c == 'G':
+        count[2]+=1
+    else:
+        count[3]+=1
+
+
+# while(last!=S+1):
+ #끝점이 마지막에 도달할때까지
+for i in range(P,S):
     window=DNAList[start:last] #한칸씩 밀기
-    count=[0 for j in range(4)]
-    for i in range(len(window)): #윈도우에 있는 문자 카운트 세기
-        if window[i] == 'A':
-            count[0]+=1
-        elif window[i] == 'C':
-            count[1]+=1
-        elif window[i] == 'G':
-            count[2]+=1
-        else:
-            count[3]+=1
-  
+    Count[window[i]]
     if (count[0]>=DNAMin[0]) and (count[1]>=DNAMin[1]) and (count[2]>=DNAMin[2]) and (count[3]>=DNAMin[3]) : #조건을 모두 만족하는 경우 카운트 증가
             total+=1
     start+=1
